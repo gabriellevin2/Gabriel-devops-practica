@@ -43,4 +43,13 @@ Imprimir pedidos.
 Consultar historial de los pedidos.
 Mostrar inventario actualizado.
 
+Posteriormente se crea la imagen para poder ejecutar la aplicación en un contenedor. Lo primero que realizamos fue clonar el repositorio desde github acceidendo a la carpeta que contiene los ficheros y modulos de tienda online. Posteriormente utilizando docker build generamos la imagen a partir de un dockerfile que esta ya en el repositorio.
+
+Una vez construida, podemos lanzar un contenedor que lo ejecute, accediendo a ella en el puerto 8000 tanto del contenedor como de mi computadora.
+
+Actualmente la unica variable de entorno soportada es el puerto de ejecucion, es decir, app port y localhost.
+
+La salida esperada en el contenedor es un URL con el purto 8000, indicando que el servidor ha sido activado. 
+
+
 
